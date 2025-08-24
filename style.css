@@ -1,0 +1,118 @@
+/* Basic Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Landing Page */
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e3b29; /* Dark Green */
+}
+
+.landing-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #ba9f38; /* Gold */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #1e3b29;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.landing-box:hover {
+    transform: scale(1.05);
+}
+
+/* Catalogs Page */
+header {
+    background-color: #1e3b29;
+    color: #ba9f38;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.catalog-container {
+    display: flex;
+}
+
+.category-selector {
+    width: 20%;
+    background-color: #ba9f38;
+    color: #1e3b29;
+    padding: 20px;
+}
+
+.category-selector h2 {
+    margin-top: 0;
+}
+
+.category-selector ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-selector li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-selector li:hover {
+    background-color: #1e3b29;
+    color: #ba9f38;
+}
+
+.product-grid {
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card-content {
+    padding: 15px;
+}
+
+.product-card-content h3 {
+    margin-top: 0;
+}
+
+.product-card-content a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #1e3b29;
+    color: #ba9f38;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
